@@ -308,7 +308,7 @@ Easy representation of \pH, \pKa \ldots
 \end{example}
 
 \begin{cnltxquote}[{\citetitle{iupac:greenbook} \cite[][p.\,103]{iupac:greenbook}}]
- The operator \p{} \textelp{} shall be printed in Roman type.
+  The operator \p{} \textelp{} shall be printed in Roman type.
 \end{cnltxquote}
 
 There is one option which changes the style the \p{} is typeset, other options
@@ -542,7 +542,7 @@ and \cs*{textsuperscript} instead of \sym{\textasciicircum} without
   \item The characters \sym{(} and \sym{)} allow the word to be hyphenated and
     don't prevent further hyphenation, likewise \sym{[} and \sym{]}.
   \item \sinceversion{5.3}The character \sym{'} is printed as \cs{chemprime}.
-  \item \sinceversion{5.8c}The character \sym{=} is printed ad
+  \item \sinceversion{5.8c}The character \sym{=} is printed as
     \cs{nonbreakinghyphen}.
 \end{itemize}
 \begin{example}[side-by-side]
@@ -585,16 +585,16 @@ which commands are defined in which way, there is the option \option{iupac}:
 \end{options}
 It has three modes:
 \begin{itemize}
- \item \keyis{iupac}{auto}: if the commands are \emph{not} defined by any
-   package or class you're using they are available generally, otherwise only
-   \emph{inside} \cs{iupac}.
- \item \keyis{iupac}{restricted}: all naming commands are \emph{only} defined
-   inside \cs{iupac}.  If the commands are defined by another package they of
-   course have that meaning outside.  They're not defined outside otherwise.
- \item \keyis{iupac}{strict}: \chemmacros\ overwrites any other definition and
-   makes the commands available throughout the document.  Of course the
-   commands can be redefined (but only in the document body).  They will still
-   be available inside \cs{iupac} then.
+  \item \keyis{iupac}{auto}: if the commands are \emph{not} defined by any
+    package or class you're using they are available generally, otherwise only
+    \emph{inside} \cs{iupac}.
+  \item \keyis{iupac}{restricted}: all naming commands are \emph{only} defined
+    inside \cs{iupac}.  If the commands are defined by another package they of
+    course have that meaning outside.  They're not defined outside otherwise.
+  \item \keyis{iupac}{strict}: \chemmacros\ overwrites any other definition and
+    makes the commands available throughout the document.  Of course the
+    commands can be redefined (but only in the document body).  They will still
+    be available inside \cs{iupac} then.
 \end{itemize}
 Table~\vref{tab:iupac_modes} demonstrates the different modes.
 
@@ -1240,7 +1240,7 @@ the \chemmodule{reactions} module.
 There are some \latin{caveat}s if you use this method:
 \begin{itemize}
   \item This method has not been extensively tested, yet.  There may be errors
-     and wrong output at unexpected places.
+    and wrong output at unexpected places.
   \item Using this method effectively disables the different values of the
     \module{particles} option \option{elpair} (see
     section~\ref{sec:particles-module}).
@@ -2187,10 +2187,10 @@ previously through \cs{DeclareChemReactant}'s \option{upper-name} and
     Outputs the value of \option{bookmark} inside of the \ac{pdf} bookmark,
     while using the reactant's \option{name} inside of the  section headings.
   \command{submainreactantplain}[\marg{mainID}\marg{subID}]
-     Outputs the value of \option{bookmark} inside of the \ac{pdf} bookmark,
-     while using the reactant's \option{name} inside of the  section
-     headings. Must be used if your \meta{ID} consists of a \meta{mainID}
-    and a \meta{subID}   part. 
+    Outputs the value of \option{bookmark} inside of the \ac{pdf} bookmark,
+    while using the reactant's \option{name} inside of the  section
+    headings. Must be used if your \meta{ID} consists of a \meta{mainID}
+    and a \meta{subID}   part.
   \command{solventplain}[\marg{ID}]
     Outputs the value of \option{bookmark} inside of the \ac{pdf} bookmark,
     while using the solvent's \option{name} inside of the  section headings.
